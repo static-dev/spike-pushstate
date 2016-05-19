@@ -7,10 +7,14 @@
     "verbose": "true"
   },
   "bugs": "https://github.com/static-dev/spike-pushstate/issues",
+  "dependencies": {
+    "micromatch": "^2.3.8"
+  },
   "devDependencies": {
     "ava": "0.14.x",
     "coveralls": "2.x",
     "nyc": "6.x",
+    "spike-core": "^0.3.0",
     "standard": "7.x"
   },
   "engines": {
@@ -21,9 +25,9 @@
   "main": "lib",
   "repository": "static-dev/spike-pushstate",
   "scripts": {
-    "test": "ava",
-    "lint": "standard",
     "coverage": "nyc ava",
-    "coveralls": "nyc --reporter=lcov ava && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "nyc --reporter=lcov ava && cat ./coverage/lcov.info | coveralls",
+    "lint": "standard",
+    "test": "ava"
   }
 }
