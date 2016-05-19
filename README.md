@@ -22,7 +22,7 @@ Here's what it does. You install it into a spike project, then start it up. Now 
 
 Just initialize it in your spike project as a plugin as such:
 
-```
+```js
 const PushState = require('spike-pushstate')
 
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
 
 That will do it! By default it will match any file with a `jade` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe only jade files in one specific folder, you can just pass the `files` option with a glob matcher as such:
 
-```
+```js
 new PushState({ files: '**/templates/*.jade' })
 ```
 
