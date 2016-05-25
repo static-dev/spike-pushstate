@@ -9,13 +9,14 @@
   "bugs": "https://github.com/static-dev/spike-pushstate/issues",
   "dependencies": {
     "micromatch": "^2.3.8",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "spike-util": "0.0.1"
   },
   "devDependencies": {
     "ava": "0.14.x",
     "coveralls": "2.x",
     "nyc": "6.x",
-    "spike-core": "^0.3.0",
+    "spike-core": "^0.4.0",
     "standard": "7.x"
   },
   "engines": {
