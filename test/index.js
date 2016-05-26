@@ -1,11 +1,12 @@
 const test = require('ava')
 const path = require('path')
+const fs = require('fs')
 const Spike = require('spike-core')
 const PushState = require('..')
 
 const fixtures = path.join(__dirname, 'fixtures')
 
-test.cb('basic', (t) => {
+test.cb('compiles correctly', (t) => {
   const project = new Spike({
     root: path.join(fixtures, 'basic'),
     entry: { main: ['./main.js'] },
@@ -15,7 +16,9 @@ test.cb('basic', (t) => {
   project.on('error', t.end)
   project.on('warning', t.end)
   project.on('compile', () => {
-    console.log('compiled!')
+    const build = fs.readFileSync(path.join(fixtures, 'basic/public/main.js'), 'utf8')
+    t.truthy(build.match(/<p>wow<\/p>/))
+    t.truthy(build.match(/exports\['index'\] =/))
     t.end()
   })
 
