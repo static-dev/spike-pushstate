@@ -10,7 +10,7 @@ test.cb('compiles correctly', (t) => {
   const project = new Spike({
     root: path.join(fixtures, 'string'),
     entry: { main: ['./main.js'] },
-    plugins: [new PushState()]
+    plugins: [new PushState('**/foo.jade')]
   })
 
   project.on('error', t.end)
@@ -19,6 +19,8 @@ test.cb('compiles correctly', (t) => {
     const build = fs.readFileSync(path.join(fixtures, 'string/public/main.js'), 'utf8')
     t.truthy(build.match(/<p>bar<\/p>/))
     t.truthy(build.match(/exports\['foo'\] =/))
+    t.falsy(build.match(/exports\['index'\] =/))
+    t.falsy(build.match(/<p>index<\/p>/))
     t.end()
   })
 
