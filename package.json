@@ -23,6 +23,11 @@
     "node": ">= 6.0.0"
   },
   "homepage": "https://github.com/static-dev/spike-pushstate",
+  "keywords": [
+    "pushstate",
+    "spike",
+    "spikeplugin"
+  ],
   "license": "MIT",
   "main": "lib",
   "repository": "static-dev/spike-pushstate",
