@@ -16,7 +16,7 @@ Here's what it does. You install it into a spike project, then start it up. Now 
 
 `npm install spike-pushstate -S`
 
-> **Note:** This project is compatible with node v6+ only
+> **Note:** Right now in order for this plugin to work, it must be used alongside a local install of spike. If you installed and are using spike globally, this plugin will not work!
 
 ## Usage
 
