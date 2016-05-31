@@ -8,16 +8,16 @@
   },
   "bugs": "https://github.com/static-dev/spike-pushstate/issues",
   "dependencies": {
-    "micromatch": "^2.3.8",
+    "filewrap": "^0.1.0",
     "mkdirp": "^0.5.1",
-    "spike-util": "0.0.1"
+    "spike-util": "0.1.0"
   },
   "devDependencies": {
-    "ava": "0.14.x",
+    "ava": "^0.15.1",
     "coveralls": "2.x",
     "nyc": "6.x",
     "spike-core": "^0.4.0",
-    "standard": "7.x"
+    "standard": "^7.1.1"
   },
   "engines": {
     "node": ">= 6.0.0"
