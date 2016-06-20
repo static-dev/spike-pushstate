@@ -29,7 +29,7 @@ test.cb('string passed to files option', (t) => {
   const project = new Spike({
     root: path.join(fixtures, 'string'),
     entry: { main: ['./main.js'] },
-    plugins: [new PushState({ files: '**/foo.jade' })]
+    plugins: [new PushState({ files: '**/foo.html' })]
   })
 
   project.on('error', t.end)
@@ -50,7 +50,7 @@ test.cb('array of globs passed to files option', (t) => {
   const project = new Spike({
     root: path.join(fixtures, 'array'),
     entry: { main: ['./main.js'] },
-    plugins: [new PushState({ files: ['foo.jade', 'bar.jade'] })]
+    plugins: [new PushState({ files: ['foo.html', 'bar.html'] })]
   })
 
   project.on('error', t.end)
