@@ -31,7 +31,7 @@ module.exports = {
 }
 ```
 
-That will do it! By default it will match any file with a `jade` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe only jade files in one specific folder, you can just pass a string with a glob matcher as such (string or array):
+That will do it! By default it will match any file with a `.html` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe only jade files in one specific folder, you can just pass a string with a glob matcher as such (string or array):
 
 ```javascript
 new PushState({ files: 'templates/*.jade' })
