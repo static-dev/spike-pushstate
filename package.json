@@ -1,6 +1,6 @@
 {
   "name": "spike-pushstate",
-  "description": ":zap: immediate page loads using pushstate",
+  "description": "immediate page loads using pushstate",
   "version": "0.2.0",
   "author": "Jeff Escalante",
   "ava": {
