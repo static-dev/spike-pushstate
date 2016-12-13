@@ -10,7 +10,7 @@
   "dependencies": {
     "filewrap": "^0.1.0",
     "mkdirp": "^0.5.1",
-    "spike-util": "0.2.1"
+    "spike-util": "^0.3.0"
   },
   "devDependencies": {
     "ava": "^0.17.0",

@@ -16,7 +16,7 @@ Here's what it does. You install it into a spike project, then start it up. Now 
 
 `npm install spike-pushstate -S`
 
-> **Note:** Right now in order for this plugin to work, it must be used alongside a local install of spike. If you installed and are using spike globally, this plugin will not work!
+> **NOTE:** Because of [an unfortunate webpack issue](https://github.com/webpack/webpack/issues/2515), you cannot use the globally installed spike CLI with this plugin. Instead, you must install spike locally (`npm i spike -S`), then execute that version. Typically adding an npm script that runs `spike watch` is the best approach.
 
 ## Usage
 
@@ -31,10 +31,10 @@ module.exports = {
 }
 ```
 
-That will do it! By default it will match any file with a `.html` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe only jade files in one specific folder, you can just pass a string with a glob matcher as such (string or array):
+That will do it! By default it will match any file with a `.html` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe only sugarml files in one specific folder, you can just pass a string with a glob matcher as such (string or array):
 
 ```javascript
-new PushState({ files: 'templates/*.jade' })
+new PushState({ files: 'templates/*.sgr' })
 ```
 
 Note that all matches are made relative to the project root.
