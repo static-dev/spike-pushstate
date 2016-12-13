@@ -18,6 +18,8 @@ Here's what it does. You install it into a spike project, then start it up. Now 
 
 > **NOTE:** Because of [an unfortunate webpack issue](https://github.com/webpack/webpack/issues/2515), you cannot use the globally installed spike CLI with this plugin. Instead, you must install spike locally (`npm i spike -S`), then execute that version. Typically adding an npm script that runs `spike watch` is the best approach.
 
+> **NOTE:** This plugin will cause a crash if used with the source map option in your app.js file. Make sure the source map option is removed before running!
+
 ## Usage
 
 Just initialize it in your spike project as a plugin as such:
@@ -31,10 +33,17 @@ module.exports = {
 }
 ```
 
-That will do it! By default it will match any file with a `.html` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe only sugarml files in one specific folder, you can just pass a string with a glob matcher as such (string or array):
+Then, in your main javascript file, require it up top:
+
+```js
+// assets/js/index.js
+require('spike-pushstate')
+```
+
+That will do it! By default it will match any file with a `.html` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe sugarml files instead, you can just pass a string with a glob matcher as such (string or array):
 
 ```javascript
-new PushState({ files: 'templates/*.sgr' })
+new PushState({ files: '**/*.sgr' })
 ```
 
 Note that all matches are made relative to the project root.
