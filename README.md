@@ -16,10 +16,6 @@ Here's what it does. You install it into a spike project, then start it up. Now 
 
 `npm install spike-pushstate -S`
 
-> **NOTE:** Because of [an unfortunate webpack issue](https://github.com/webpack/webpack/issues/2515), you cannot use the globally installed spike CLI with this plugin. Instead, you must install spike locally (`npm i spike -S`), then execute that version. Typically adding an npm script that runs `spike watch` is the best approach.
-
-> **NOTE:** This plugin will cause a crash if used with the source map option in your app.js file. Make sure the source map option is removed before running!
-
 ## Usage
 
 Just initialize it in your spike project as a plugin as such:
@@ -47,6 +43,14 @@ new PushState({ files: '**/*.sgr' })
 ```
 
 Note that all matches are made relative to the project root.
+
+## Caveats
+
+- Because of [an unfortunate webpack issue](https://github.com/webpack/webpack/issues/2515), you cannot use the globally installed spike CLI with this plugin. Instead, you must install spike locally (`npm i spike -S`), then execute that version. Typically adding an npm script that runs `spike watch` is the best approach.
+
+- This plugin will cause a crash if used with the source map option in your app.js file. Make sure the source map option is removed before running!
+
+- If you add a new file in development mode and are using webpack-hard-source for cacheing, you will need to clear your cache before the new page works with spike-pushstate.
 
 ## License & Contributing
 
