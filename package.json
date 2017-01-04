@@ -16,7 +16,7 @@
     "ava": "^0.17.0",
     "coveralls": "2.x",
     "nyc": "10.0.0",
-    "spike-core": "^0.12.0",
+    "spike-core": "^0.13.0",
     "standard": "^8.0.0"
   },
   "engines": {
