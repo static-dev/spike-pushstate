@@ -1,5 +1,7 @@
 # Spike PushState
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/static-dev/spike-pushstate.svg)](https://greenkeeper.io/)
+
 [![npm](http://img.shields.io/npm/v/spike-pushstate.svg?style=flat)](https://badge.fury.io/js/spike-pushstate) [![tests](http://img.shields.io/travis/static-dev/spike-pushstate/master.svg?style=flat)](https://travis-ci.org/static-dev/spike-pushstate) [![dependencies](http://img.shields.io/david/static-dev/spike-pushstate.svg?style=flat)](https://david-dm.org/static-dev/spike-pushstate) [![coverage](http://img.shields.io/coveralls/static-dev/spike-pushstate.svg?style=flat)](https://coveralls.io/github/static-dev/spike-pushstate)
 
 :zap: immediate page loads using pushState
