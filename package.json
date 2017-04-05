@@ -17,7 +17,7 @@
     "coveralls": "2.x",
     "nyc": "10.2.0",
     "spike-core": "^0.13.0",
-    "standard": "^9.0.0"
+    "standard": "^10.0.0"
   },
   "engines": {
     "node": ">= 6.0.0"
