@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/static-dev/spike-pushstate/issues",
   "dependencies": {
-    "filewrap": "^0.1.0",
+    "filewrap": "^1.0.0",
     "mkdirp": "^0.5.1",
     "spike-util": "^0.4.0"
   },
