@@ -10,13 +10,13 @@
   "dependencies": {
     "filewrap": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "spike-util": "^0.4.0"
+    "spike-util": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.19.0",
-    "coveralls": "2.x",
-    "nyc": "10.2.0",
-    "spike-core": "^0.13.0",
+    "ava": "^0.20.0",
+    "coveralls": "^2.13.1",
+    "nyc": "^11.0.3",
+    "spike-core": "^2.0.1",
     "standard": "^10.0.0"
   },
   "engines": {
