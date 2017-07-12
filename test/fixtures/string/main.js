@@ -1,1 +1,1 @@
-require('spike-pushstate')
+require('spike-pushstate-client')
