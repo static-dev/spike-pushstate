@@ -33,7 +33,7 @@ Then, in your main javascript file, require it up top:
 
 ```js
 // assets/js/index.js
-require('spike-pushstate')
+require('spike-pushstate-client')
 ```
 
 That will do it! By default it will match any file with a `.html` extension, and use the pushState override on it. However, if you want it to match a different pattern, like maybe sugarml files instead, you can just pass a string with a glob matcher as such (string or array):
