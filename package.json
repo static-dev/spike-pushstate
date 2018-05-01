@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "ava": "^0.20.0",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.1",
     "nyc": "^11.0.3",
     "spike-core": "^2.0.1",
     "standard": "^10.0.0"
