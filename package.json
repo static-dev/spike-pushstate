@@ -13,7 +13,7 @@
     "spike-util": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.20.0",
+    "ava": "^1.0.1",
     "coveralls": "^2.13.1",
     "nyc": "^11.0.3",
     "spike-core": "^2.0.1",
